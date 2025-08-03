@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Stream - Login</title>
+  <link rel="icon" type="image/x-icon" href="/tv.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Movie Stream</h1>
+    <form action="/player" method="GET" onsubmit="return validateForm()">
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <button type="submit">Join Stream</button>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      const username = document.getElementById('username').value.trim();
+      if (username === '') {
+        alert('Please enter a username');
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
