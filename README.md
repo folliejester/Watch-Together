@@ -53,13 +53,15 @@ A **Node.js** application that streams movies with synchronized subtitles and in
 
 1. **Clone the Repository**
    ```bash
-   git clone https://your-repo-url
-   cd movie-stream-app
+   git clone https://github.com/folliejester/Watch-Together.git
+   cd Watch-Together
    ```
 
 2. **Install Dependencies**
    ```bash
    npm install
+   npm init -y
+   npm install express socket.io
    ```
 
 3. **Add Media Files**
